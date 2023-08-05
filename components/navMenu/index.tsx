@@ -1,6 +1,9 @@
+'use client'
+
 import Link from 'next/link'
 import styles from './navMenu.module.css'
-import Image from 'next/image'
+import { SignInButton, SignOutButton } from '../buttons'
+import AuthCheck from '../AuthCheck'
 
 export default function NavMenu() {
   return (
@@ -17,6 +20,14 @@ export default function NavMenu() {
         </li>
         <li>
           <Link href={'/users'}>Users</Link>
+        </li>
+        <li>
+          <SignInButton />
+        </li>
+        <li>
+          <AuthCheck>
+            <SignOutButton />
+          </AuthCheck>
         </li>
       </ul>
     </nav>

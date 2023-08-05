@@ -1,3 +1,5 @@
+export const revalidate = 500
+
 interface Post {
   title: string
   slug: string
