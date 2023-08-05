@@ -19,6 +19,7 @@ main {
   background-color: white;
   padding: 1rem;
   min-height: 300px;
+  color: black;
 }
 
 footer {
